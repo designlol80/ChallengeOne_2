@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Juego del Ahorcado</title>
+</head>
+<body>
+    <div class="container_1">
+            <div class="logo">
+                <img class="logoimg" src="img/logo.png" alt="logo">
+                <h1 class="title">Juego del Ahorcado</h1>
+            </div>
+<!--###################################################################################################################################-->
+            <div id="id_left" class="left">
+                <input id="input-texto" class="text-input" type="text" placeholder="ingrese el texto aquí">
+                <button id="btniniciar_juego" type="button" onclick="empezar()">Iniciar Juego</button>
+                <button id="btnagregar_palabra" type="button" onclick="agregar_palabra()">Agregar Palabra</button> 
+            </div>
+<!--###################################################################################################################################-->
+            <div id="idhombreahorcado" class="hombreahorcado" style="display: none;">
+                <img id="hombre" alt="ahorcado">
+            </div>
+            <div id="idletra1" class="letra1" style="display: none;">
+                <img id="resultado" alt="ahorcad">
+            </div>
+            <!--###################################################################################################################################-->
+            <div id="idingreso" style="display: none;">
+                <div id="idadivinado" class="adivinado">    
+                </div>
+                <div id="iderrado" class="errado">    
+                </div>
+            </div>
+<!--###################################################################################################################################-->                
+            <div id="id_button" class="button">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                    </svg>
+                    Máx 8 caracteres
+                </p>
+                <button id="btnguardaryempezar" type="button" onclick="guardaryempezar()">Guardar y Empezar</button>
+                <button id="btncancelar" type="button" onclick="location.href='index.html';">Cancelar</button>
+            </div>
+            <div id="id_button1" class="button">
+                <button id="btnnuevojuego" type="button" onclick="empezar()">Nuevo Juego</button>
+                <button id="btndesistir" type="button" onclick="location.href='index.html';">Desistir</button>
+            </div>
+    </div>
+</body>
+</html>

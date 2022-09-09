@@ -1,0 +1,204 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #F3F5FC;
+}
+.container_1{
+    margin:1% auto;
+    width: 960px;
+    height: 560px;
+    padding: 5px;
+    background: #F3F5FC;  
+}
+.logo{
+    width: 100%;
+    float: left;
+    background: #F3F5FC;
+}
+.logoimg{
+    margin-top: 1%;
+    margin-left: 5%;
+    float: inherit;/*Toma el valor de su padre en este caso left*/
+    background: #F3F5FC;
+}
+.title{
+    margin-left: 2%;
+    float: inherit;
+    background:  #F3F5FC;
+}
+.left{
+    width: 100%;
+    height: 100%;
+}
+.text-input{
+    float: left;
+    margin-left: 10%;
+    margin-top: 6%;
+    width: 80%;
+    height: 10%;
+    color: #0A3871;
+    font-size: 20px;
+    border: none;/*desactivamos el borde estatico*/
+    outline: none;/*Desabilita que aparezca los bordes cuando se esta escribiendo en la casilla(interactuando)*/
+    background: #F3F5FC;
+    display: none;
+}
+#btniniciar_juego{
+    width: 30%;
+    padding: 10px;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    color: #D8DFEB;
+    font-family: 'Inter';
+    font-size: 20px;
+    border-radius: 24px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 17%;
+    background: #0A3871;
+}
+#btnagregar_palabra{
+    width: 30%;
+    padding: 10px;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-size: 20px;
+    border-radius: 24px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2%;
+    background: #D8DFEB;
+}
+
+/*######################################### 40:30seg*/
+.hombreahorcado{
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    max-height: 16.75rem;
+    width: 615px;
+    display: inline-block;
+}
+#hombre{
+    max-width: 100%;
+    max-height: 100%;
+    width: 16.75rem;
+    display: none;
+}
+.letra1{
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    max-height: 16.75rem;
+    width:300px;
+    display: inline-block;
+}
+#resultado{
+    max-width: 100%;
+    max-height: 100%;
+    width: 16.75rem;
+    display: none;
+}
+.adivinado{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #002462;
+}
+.letra{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.adivinada{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-bottom: solid 1px #002462;
+    margin-left: 0.4rem;
+    line-height: 4.5rem;
+}
+.errado{
+    text-align: center;
+    margin-top: 1rem;
+    color: #242d34;
+    margin-left: 1rem;
+}
+.errada{
+    margin-left: 1rem;
+}
+/*#########################################*/
+
+.button{
+    width: 100%;
+    height: auto;
+    float: auto;
+    background: #F3F5FC;
+    display: none;
+}
+p{
+    margin-left: 10%;
+}
+#btnguardaryempezar{
+    width: 30%;
+    padding: 10px;
+    margin-top: 35px;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    color: #D8DFEB;
+    font-family: 'Inter';
+    font-size: 20px;
+    border-radius: 24px;
+    background: #0A3871;
+}
+#btncancelar{
+    width: 30%;
+    padding: 10px;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-size: 20px;
+    border-radius: 24px;
+    background: #D8DFEB;
+}
+#btnnuevojuego{
+    width: 30%;
+    padding: 10px;
+    margin-top: 35px;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    color: #D8DFEB;
+    font-family: 'Inter';
+    font-size: 20px;
+    border-radius: 24px;
+    background: #0A3871;
+}
+#btndesistir{
+    width: 30%;
+    padding: 10px;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-size: 20px;
+    border-radius: 24px;
+    background: #D8DFEB;
+}
+
+@media screen and (max-width:480px){
+    .logo, .container_1, .left, .text-input, .button{
+        width: auto;
+    }
+    #iniciar_juego, #agregar_palabra,#btnguardaryempezar, #btncancelar, #btnnuevojuego, #btndesistir{
+        width: auto;
+    }
+    p{
+        display: inline-block;
+    }
+}
+/*##########################################Iniciar juego###########################################################*/
+
+
